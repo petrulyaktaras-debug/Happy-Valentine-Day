@@ -1,0 +1,233 @@
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background:linear-gradient(120deg,#ffe6e6,#ffd6f0);
+color:#333;
+overflow-x:hidden;
+transition:0.4s;
+}
+
+.dark-mode{
+background:linear-gradient(120deg,#1a001f,#330033);
+color:white;
+}
+
+h1,h2{
+text-align:center;
+font-family:'Playfair Display',serif;
+}
+
+#theme-toggle,#music-toggle{
+position:fixed;
+top:20px;
+padding:10px 14px;
+border:none;
+border-radius:50%;
+cursor:pointer;
+background:#ff4d6d;
+color:white;
+font-size:18px;
+z-index:10000;
+}
+
+#theme-toggle{right:20px;}
+#music-toggle{right:70px;}
+
+#valentine{
+text-align:center;
+padding:120px 20px;
+}
+
+.valentine-photos{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
+margin:40px 0;
+}
+
+.side-photo{
+width:120px;
+border-radius:15px;
+}
+
+.heart{
+font-size:170px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.heart:hover{
+transform:scale(1.15);
+}
+
+#secret-letter{
+max-width:600px;
+margin:30px auto;
+padding:25px;
+background:#fff0f5;
+border-radius:20px;
+display:none;
+min-height:120px;
+}
+
+.dark-mode #secret-letter{
+background:#440044;
+}
+
+.card{
+max-width:1000px;
+margin:60px auto;
+background:#fff0f5;
+padding:50px;
+border-radius:20px;
+}
+
+.dark-mode .card{
+background:#440044;
+}
+
+.memory{
+text-align:center;
+margin-bottom:70px;
+opacity:0;
+transform:translateY(40px);
+transition:0.6s;
+}
+
+.memory.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.memory img,
+.memory video{
+width:45%;
+max-width:420px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.memory img:hover,
+.memory video:hover{
+transform:scale(1.05);
+}
+
+/* LOVE BLOCKS */
+
+.love-container{
+display:flex;
+flex-direction:column;
+gap:25px;
+margin-top:50px;
+}
+
+.love-card{
+background:#ffebf2;
+padding:25px;
+border-radius:15px;
+cursor:pointer;
+transition:0.4s;
+overflow:hidden;
+}
+
+.dark-mode .love-card{
+background:#440044;
+}
+
+.love-card:hover{
+transform:scale(1.03);
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.love-title{
+font-weight:600;
+font-size:18px;
+}
+
+.love-text{
+max-height:0;
+opacity:0;
+overflow:hidden;
+transition:0.5s ease;
+margin-top:10px;
+}
+
+.love-card.active .love-text{
+max-height:200px;
+opacity:1;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#ffcce6;
+}
+
+/* Floating hearts */
+
+#heart-container{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:9999;
+}
+
+.floating-heart{
+position:absolute;
+color:#ff4d6d;
+animation:floatUp linear forwards;
+}
+
+@keyframes floatUp{
+0%{transform:translateY(100vh);opacity:1}
+100%{transform:translateY(-10vh);opacity:0}
+}
+/* ===== ГРА "Злови серце" ===== */
+#game{
+text-align:center;
+margin:60px 0;
+}
+
+#game-container{
+position:relative;
+width:100%;
+height:300px;
+border:2px dashed #ff4d6d;
+border-radius:15px;
+overflow:hidden;
+background:linear-gradient(120deg,#fff0f5,#ffe6e6);
+}
+
+#game-container .game-heart{
+position:absolute;
+font-size:30px;
+cursor:pointer;
+transition:0.2s;
+}
+
+#score{
+margin-top:15px;
+font-size:18px;
+font-weight:600;
+color:#ff4d6d;
+}
+#together{
+text-align:center;
+margin:60px 0;
+padding:30px;
+background:#fff0f5;
+border-radius:20px;
+font-size:20px;
+color:#ff4d6d;
+}
+
+.dark-mode #together{
+background:#440044;
+color:white;
+}

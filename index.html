@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Валентинка ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="heart-container"></div>
+
+<button id="theme-toggle">🌙</button>
+<button id="music-toggle">🎵</button>
+
+<audio id="bg-music" loop>
+<source src="music/love.mp3" type="audio/mpeg">
+</audio>
+
+<section id="valentine">
+<h1>З Днем Закоханих ❤️</h1>
+<p>Натисни на серце</p>
+
+<div class="valentine-photos">
+<img src="images/photo_left.jpg" class="side-photo">
+<div class="heart" id="main-heart">❤️</div>
+<img src="images/photo_right.jpg" class="side-photo">
+</div>
+
+<button id="secret-btn">💌 Тиць</button>
+
+<div id="secret-letter">
+<h2>Яринка ❤️</h2>
+<p id="typed-text"></p>
+</div>
+</section>
+
+<section id="memories">
+<div class="card">
+
+<h2 class="fade-in">Найкращі моменти з тобою ❤️</h2>
+    <p class="fade-in">Найкращий без перебільшення день в моєму житті ❤️.</p>
+
+    <!-- 7 memory -->
+    <div class="memory"><div class="gallery"><img src="images/photo1.jpg" alt="moment 1"></div><p>Шкільна фотосесія, тут я зрозумів що дуже сильно покохав тебе.</p></div>
+    <div class="memory"><div class="gallery"><img src="images/photo2.jpg" alt="moment 2"></div><p>❤️</p></div>
+    <div class="memory"><div class="gallery"><img src="images/photo3.jpg" alt="moment 3"></div><p></p></div>
+    <div class="memory"><div class="gallery"><video controls><source src="videos/video1.mp4" type="video/mp4">Ваш браузер не підтримує відео.</video></div><p>Наш випускний💖</p></div>
+    <div class="memory"><div class="gallery"><img src="images/photo4.jpg" alt="moment 4"></div><p></p></div>
+    <div class="memory"><div class="gallery"><img src="images/photo5.jpg" alt="moment 5"></div><p>Люблю сильно сильно❤️</p></div>
+    <div class="memory"><div class="gallery"><video controls><source src="videos/video2.mp4" type="video/mp4">Ваш браузер не підтримує відео.</video></div><p>Вальс</p></div>
+    <div class="memory"><div class="gallery"><img src="images/photo6.jpg" alt="moment 6"></div><p>Гори і ми</p></div>
+    <div class="memory"><div class="gallery"><img src="images/photo7.jpg" alt="moment 7"></div><p></p></div>
+    <div class="memory"><div class="gallery"><img src="images/photo8.jpg" alt="moment 8"></div><p>❤️</p></div>
+    <div class="memory"><div class="gallery"><video controls><source src="videos/video3.mp4" type="video/mp4">Ваш браузер не підтримує відео.</video></div><p>цьом</p></div>
+    <div class="memory"><div class="gallery"><img src="images/photo9.jpg" alt="moment 9"></div><p>❤️</p></div>
+    <div class="memory"><div class="gallery"><img src="images/photo10.jpg" alt="moment 10"></div><p>❤️</p></div>
+<h2 style="margin-top:100px;">Love — is ❤️</h2>
+
+<div class="love-container">
+
+<div class="love-card">
+<div class="love-title">Love — is 🤍</div>
+<div class="love-text">Коли ти дивишся в її очі і розумієш, що це твій дім.</div>
+</div>
+
+<div class="love-card">
+<div class="love-title">Кохання — це 💞</div>
+<div class="love-text">Підтримка навіть тоді, коли складно.</div>
+</div>
+
+<div class="love-card">
+<div class="love-title">Love — is 🌸</div>
+<div class="love-text">Обирати одну й ту ж людину щодня.</div>
+</div>
+
+<div class="love-card">
+<div class="love-title">Кохання — це 😄</div>
+<div class="love-text">Сміятися разом без причини.</div>
+</div>
+
+<div class="love-card">
+<div class="love-title">Love — is 🔥</div>
+<div class="love-text">Відчувати тепло навіть на відстані.</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="game">
+  <h2>🎮 Злови серце ❤️</h2>
+  <p>Натискай на літаючі серця, щоб зібрати очки!</p>
+  <div id="game-container"></div>
+  <div id="score">Очки: 0</div>
+</section>
+
+<section id="together">
+  <h2>⏳ Ми разом</h2>
+  <p id="together-timer">Завантаження...</p>
+</section>
+
+<footer>
+Зроблено з любов’ю ❤️
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
