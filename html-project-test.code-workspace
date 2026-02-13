@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "html-project-test",
+			"path": "../html-project-test"
+		},
+		{
+			"name": "html-css",
+			"path": "../html-css"
+		},
+		{
+			"name": "JavaScript",
+			"path": "../JavaScript"
+		},
+		{
+			"name": "2025",
+			"path": "../2025"
+		},
+		{
+			"path": "../2026"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JavaScript"
+	}
+}
